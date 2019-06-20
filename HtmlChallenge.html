@@ -10,47 +10,12 @@
                 margin-left: 100px;
                 font-size: 20px;    
             }
-            .space{
-                width: 150px;
-                height: 22px;
-                margin-left: 5px;
-                border: 1px solid grey           
-            }
-
-            .circle{
-                width: 14px;
-                height: 14px;
-                border-radius: 7px;
-                border: 1px solid grey;
-            }
-        
-            .details, .space{
+                    
+            .details{
                 display: inline-block;
                 margin-top: 5px;
             }
 
-            .gender, .circle {
-                display: inline-block;
-                margin-top: 5px;
-            }
-
-            .details, .option{
-                display: inline-block;
-                margin-top: 5px;
-            }
-
-            #submit {
-                margin-top: 10px;
-                padding: 3px;
-                width: 70px;
-                height: 22px;    
-                border: 1px solid grey;
-                border-radius: 7px;
-                font-family:monospace;
-                text-decoration: none;
-                color: black;
-            }
-        
         </style>
 
     </head>
@@ -62,38 +27,39 @@
         </div>    
             
         <p> Please enter your information below </p>
-            
-        <div>
         
-            <div class = "details"> Name: </div>
-            <div class = "space"> </div>
-            
-        </div> 
-            
-        <div>
+        <form>
+            <label> Name: </label>
+            <input type = "text"; />
+        </form>  
         
-            <div class = "details"> Surname: </div>
-            <div class = "space"> </div>
-            
-        </div>
-        
+        <form>
+            <label> Surname: </label>
+            <input type = "text"; />
+        </form>  
+       
         <div class = "details"> Gender: </div>
          
-        <div>
-            
-            <div class = "gender"> male: </div>
-            <div class = "circle"> </div>
-                
-            <div class = "gender"> female: </div>
-            <div class = "circle"> </div>    
-            
+        <div class= "details">
+            <label> male: </label>
+            <input type =radio />
+        </div> 
+        
+        <div class= "details">
+            <form>
+                <label> female: </label>
+                <input type = "radio" />
+            </form> 
         </div>  
-        
-        <div>
-            <div class = "details"> age: </div><div class = "space"> </div>
-        </div>   
-        
-        <div id = "submit"> Submit </div>   
+                
+        <form>
+            <label> age: </label>
+            <input type = "text"; />
+        </form>  
+         
+        <form>
+            <input type = "submit"; value = "Submit"/>
+        </form>
         
             </body>
 
